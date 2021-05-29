@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Folknews</ion-title>
+    <ion-button fill="clear" (click)="openMenu()" slot="end">
+      <ion-icon name="menu-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-menu side="end" type="push" menuId="main" contentId="main" maxEdgeStart="100">
+  <ion-header>
+    <ion-toolbar color="gray">
+      <ion-title>Categorias</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="football-outline"></ion-icon>
+        Desporto
+      </ion-item>
+      <ion-item>
+        <ion-icon name="people-outline"></ion-icon>
+        Política
+      </ion-item>
+      <ion-item>
+        <ion-icon name="medkit-outline"></ion-icon>
+        Saúde
+      </ion-item>
+      <ion-item>
+        <ion-icon name="globe-outline"></ion-icon>
+        Mundo
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main"></ion-router-outlet>

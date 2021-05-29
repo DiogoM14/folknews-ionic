@@ -6,6 +6,8 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { HeaderPage } from '../header/header.page';
+import { CardPage } from '../card/card.page';
+import { SearchBarPage } from '../search-bar/search-bar.page';
 
 
 @NgModule({
@@ -15,6 +17,6 @@ import { HeaderPage } from '../header/header.page';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, HeaderPage]
+  declarations: [HomePage, HeaderPage, CardPage, SearchBarPage]
 })
 export class HomePageModule {}

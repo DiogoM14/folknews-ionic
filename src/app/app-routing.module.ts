@@ -15,6 +15,14 @@ const routes: Routes = [
     path: 'header',
     loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
   },
+  {
+    path: 'card',
+    loadChildren: () => import('./card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'search-bar',
+    loadChildren: () => import('./search-bar/search-bar.module').then( m => m.SearchBarPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,4 +1,4 @@
-<ion-card *ngFor="let new of news" routerLink="{{ new.id }}">
+<ion-card *ngFor="let new of news" [routerLink]="['/new-details', new.id]">
   <img src="{{ new.multimediaPrincipal }}" alt="Marega" />
   <ion-card-header>
     <ion-card-subtitle>{{ new.autores[0].nome }}</ion-card-subtitle>

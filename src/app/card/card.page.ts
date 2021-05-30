@@ -11,7 +11,5 @@ export class CardPage implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.news)
   }
-
 }

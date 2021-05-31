@@ -14,6 +14,26 @@ const routes: Routes = [
     component: HomePage
   },
   {
+    path: 'popular',
+    component: HomePage
+  },
+  {
+    path: 'saude',
+    component: HomePage
+  },
+  {
+    path: 'mundo',
+    component: HomePage
+  },
+  {
+    path: 'politica',
+    component: HomePage
+  },
+  {
+    path: 'economia',
+    component: HomePage
+  },
+  {
     path: 'new-details/:id',
     component: NewDetailsPage
   },
@@ -52,6 +72,10 @@ const routes: Routes = [
   {
     path: 'categories',
     loadChildren: () => import('./categories/categories.module').then( m => m.CategoriesPageModule)
+  },
+  {
+    path: 'header-categories',
+    loadChildren: () => import('./header-categories/header-categories.module').then( m => m.HeaderCategoriesPageModule)
   },
 ];
 

@@ -9,7 +9,7 @@
     <div class="authors">
       <p>por {{ new.autores[0].nome }}</p>
       <span>•</span>
-      <p>{{new.data | date:'dd-MM-yyyy'}}</p>
+      <p>{{ new.data | date: "M/d/yy, h:mm:a" }}</p>
     </div>
 
     <img src="{{ new.multimediaPrincipal }}" alt="{{ new.titulo }}">

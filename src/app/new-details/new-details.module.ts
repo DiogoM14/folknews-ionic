@@ -7,8 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { NewDetailsPageRoutingModule } from './new-details-routing.module';
 
 import { NewDetailsPage } from './new-details.page';
-import { HeaderPage } from '../header/header.page';
 import { HeaderNewDetailsPage } from '../header-new-details/header-new-details.page';
+import { TabsPage } from '../tabs/tabs.page';
 
 @NgModule({
   imports: [
@@ -17,6 +17,6 @@ import { HeaderNewDetailsPage } from '../header-new-details/header-new-details.p
     IonicModule,
     NewDetailsPageRoutingModule
   ],
-  declarations: [NewDetailsPage, HeaderPage, HeaderNewDetailsPage]
+  declarations: [NewDetailsPage, HeaderNewDetailsPage, TabsPage]
 })
 export class NewDetailsPageModule {}

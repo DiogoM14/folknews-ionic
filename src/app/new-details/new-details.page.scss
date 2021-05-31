@@ -1,12 +1,36 @@
 .container {
-  padding: 0 1rem;
-}
+  background: #202125;
+  padding: 1rem;
 
-.details {
-  display: flex;
-  justify-content: space-between;
-}
+  h1 {
+    margin: 0;
+  }
 
-p {
-  text-align: justify;
+  .description {
+    text-align: justify;
+    color: #a7a7a7;
+  }
+
+  .authors {
+    display: flex;
+    align-items: center;
+
+    p, span {
+      color: #a7a7a7;
+      font-size: 14px;
+    }
+
+    span {
+      margin: 0 8px;
+    }
+  }
+
+  img {
+    border-radius: 8px;
+  }
+
+  .category {
+    padding: 8px 16px;
+    background: #1f1f1f;
+  }
 }

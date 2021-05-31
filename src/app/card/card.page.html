@@ -1,11 +1,11 @@
-<ion-card *ngFor="let new of news" [routerLink]="['/new-details', new.id]">
-  <img src="{{ new.multimediaPrincipal }}" alt="{{ new.titulo }}" />
-  <ion-card-header>
-    <ion-card-subtitle>{{ new.autores[0].nome }}</ion-card-subtitle>
-    <ion-card-title>{{ new.titulo }}</ion-card-title>
-  </ion-card-header>
-
-  <ion-card-content>
-    {{ new.descricao }}
-  </ion-card-content>
-</ion-card>
+<div class="card" *ngFor="let new of news" [routerLink]="['/new-details', new.id]">
+  <img src="{{ new.multimediaPrincipal }}" alt="{{ new.titulo }}">
+  <div class="content">
+    <h2>{{ new.titulo }}</h2>
+    <div class="description">
+      <p class="author">{{ new.autores[0].nome }}</p>
+      <span>•</span>
+      <p class="date">{{new.data | date:'dd-MM-yyyy'}}</p>
+    </div>
+  </div>
+</div>

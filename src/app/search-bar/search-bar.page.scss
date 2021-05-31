@@ -1,14 +1,14 @@
-div {
-  background:transparent;
-  padding: 0;
-  margin: 16px;
+.search-bar {
 
-  // ion-searchbar {
-  //   background: #fff;
-  //   width: 100%;
-  //   height: 36px;
-  //   border-radius: 8px;
-  //   border: 1px solid #c2c2c2;
-  //   padding: 0 16px;
-  // }
+  input {
+    display: flex;
+    margin: 16px auto;
+    padding: 0 16px;
+
+    background: #313236;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    width: 80%;
+  }
 }

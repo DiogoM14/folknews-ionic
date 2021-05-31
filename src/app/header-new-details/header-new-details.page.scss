@@ -1,7 +1,24 @@
-ion-buttons {
-  background: transparent;
-}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  background: #202125;
 
-ion-back-button {
-  color: #000;
+  .left {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 20px 0 20px 8px;
+    }
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 }

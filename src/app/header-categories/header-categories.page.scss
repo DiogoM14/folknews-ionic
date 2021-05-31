@@ -1,6 +1,6 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 16px;
   background: #202125;
@@ -15,10 +15,5 @@ header {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-  }
-
-  ion-icon {
-    width: 24px;
-    height: 24px;
   }
 }

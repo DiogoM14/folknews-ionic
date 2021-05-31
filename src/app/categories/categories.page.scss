@@ -1,0 +1,53 @@
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px;
+  grid-template-areas:
+    "popular popular"
+    "main saude"
+    "teste futebol"
+    "politica futebol"
+    "economia ultimas";
+  gap: 20px;
+  padding: 16px 16px 24px 16px;
+  background: #202125;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  background: #313236;
+  border-radius: 8px;
+
+  h1 {
+    margin: 8px 0;
+    font-size: 22px;
+  }
+
+  ion-icon {
+    margin-bottom: 4px;
+    width: 36px;
+    height: 36px;
+  }
+
+}
+
+.default {
+  grid-area: main;
+}
+
+.teste {
+  grid-area: teste;
+}
+
+.futebol {
+  grid-area: futebol;
+}
+
+.popular {
+  grid-area: popular;
+}

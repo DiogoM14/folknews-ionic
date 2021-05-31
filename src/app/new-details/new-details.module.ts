@@ -8,6 +8,7 @@ import { NewDetailsPageRoutingModule } from './new-details-routing.module';
 
 import { NewDetailsPage } from './new-details.page';
 import { HeaderPage } from '../header/header.page';
+import { HeaderNewDetailsPage } from '../header-new-details/header-new-details.page';
 
 @NgModule({
   imports: [
@@ -16,6 +17,6 @@ import { HeaderPage } from '../header/header.page';
     IonicModule,
     NewDetailsPageRoutingModule
   ],
-  declarations: [NewDetailsPage, HeaderPage]
+  declarations: [NewDetailsPage, HeaderPage, HeaderNewDetailsPage]
 })
 export class NewDetailsPageModule {}

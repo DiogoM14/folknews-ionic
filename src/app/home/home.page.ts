@@ -9,7 +9,7 @@ import { HomeService } from './home.service';
 })
 export class HomePage {
   news: any = []
-  queryName = "popular"
+  queryName = "ultimas"
 
   constructor(private cardService: HomeService, private router: Router) { }
 

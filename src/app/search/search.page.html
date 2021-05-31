@@ -1,16 +1,13 @@
-
 <ion-content class="new-bg">
-<div class="container">
-  <form>
-    <ion-searchbar [(ngModel)]="news.title" name="title" onSubmit="news.title"></ion-searchbar>
-    <ion-button [routerLink]="['/search', news.title]" (click)="getNews(news.title)">Procurar</ion-button>
-  </form>
+  <div class="container">
+    <form>
+      <ion-searchbar [(ngModel)]="news.title" name="title" onSubmit="news.title"></ion-searchbar>
+      <ion-button [routerLink]="['/search']" (click)="getNews(news.title)">Procurar</ion-button>
+    </form>
 
-  <app-card [news]="news"></app-card>
+    <app-card [news]="news"></app-card>
 
-</div>
-
+  </div>
 </ion-content>
-
 
 <app-tabs></app-tabs>

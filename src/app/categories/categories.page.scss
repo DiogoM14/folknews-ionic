@@ -1,5 +1,6 @@
 .container {
   display: grid;
+  height: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px;
   grid-template-areas:
@@ -9,8 +10,7 @@
     "politica futebol"
     "economia ultimas";
   gap: 20px;
-  padding: 16px;
-
+  padding: 16px 16px 24px 16px;
   background: #202125;
 }
 

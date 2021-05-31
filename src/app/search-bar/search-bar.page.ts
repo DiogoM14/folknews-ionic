@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-search-bar',
@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-bar.page.scss'],
 })
 export class SearchBarPage implements OnInit {
+  @Input() getCategoryNews: any;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  todo = {}
+
+  logForm() {
+    this.getCategoryNews(this.todo)
   }
 
 }

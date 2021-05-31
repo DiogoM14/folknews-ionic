@@ -14,6 +14,7 @@ export class HomePage {
   constructor(private cardService: HomeService, private router: Router) { }
 
   ngOnInit(): void {
+    console.log(this.queryName)
     this.getCategoryNews(this.queryName);
   }
 

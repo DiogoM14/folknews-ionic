@@ -2,12 +2,21 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home/home.page';
 import { NewDetailsPage } from './new-details/new-details.page';
+import { SearchPage } from './search/search.page';
 
 const routes: Routes = [
   {
     path: '',
     redirectTo: 'ultimas',
     pathMatch: 'full'
+  },
+  {
+    path: 'search',
+    component: SearchPage
+  },
+  {
+    path: 'search/:news',
+    component: SearchPage
   },
   {
     path: 'desporto',
@@ -34,7 +43,7 @@ const routes: Routes = [
     component: HomePage
   },
   {
-    path: 'covid-19',
+    path: 'ambiente',
     component: HomePage
   },
   {
@@ -80,6 +89,10 @@ const routes: Routes = [
   {
     path: 'header-categories',
     loadChildren: () => import('./header-categories/header-categories.module').then( m => m.HeaderCategoriesPageModule)
+  },
+  {
+    path: 'search',
+    loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
   },
 ];
 

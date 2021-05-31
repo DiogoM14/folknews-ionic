@@ -9,7 +9,7 @@ import { HomeService } from './home.service';
 })
 export class HomePage {
   news: any = []
-  queryName = "ultimas"
+  queryName = this.router.url
 
   constructor(private cardService: HomeService, private router: Router) { }
 

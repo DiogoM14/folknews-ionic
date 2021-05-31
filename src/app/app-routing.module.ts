@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { HomePage } from './home/home.page';
 import { NewDetailsPage } from './new-details/new-details.page';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'ultimas',
     pathMatch: 'full'
+  },
+  {
+    path: 'desporto',
+    component: HomePage
   },
   {
     path: 'new-details/:id',
@@ -14,6 +19,10 @@ const routes: Routes = [
   },
   {
     path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'ultimas',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
@@ -39,6 +48,10 @@ const routes: Routes = [
   {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: 'categories',
+    loadChildren: () => import('./categories/categories.module').then( m => m.CategoriesPageModule)
   },
 ];
 

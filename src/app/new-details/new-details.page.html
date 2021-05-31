@@ -1,0 +1,22 @@
+<app-header-new-details></app-header-new-details>
+
+<ion-content *ngFor="let new of news">
+  <div class="container">
+
+    <h1>{{ new.titulo }}</h1>
+    <p class="description">{{ new.descricao }}</p>
+
+    <div class="authors">
+      <p>por {{ new.autores[0].nome }}</p>
+      <span>•</span>
+      <p>{{new.data | date:'dd-MM-yyyy'}}</p>
+    </div>
+
+    <img src="{{ new.multimediaPrincipal }}" alt="{{ new.titulo }}">
+
+    <p class="body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione harum minus nihil nisi quam nostrum. Et provident ea deserunt repellendus vitae sunt non, magni harum fugiat, nesciunt nisi cupiditate expedita?</p>
+    <p class="category">{{ new.tags[0].nome }}</p>
+  </div>
+</ion-content>
+
+<app-tabs></app-tabs>

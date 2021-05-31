@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HeaderPage } from '../header/header.page';
 import { CardPage } from '../card/card.page';
 import { SearchBarPage } from '../search-bar/search-bar.page';
+import { TabsPage } from '../tabs/tabs.page';
 
 
 @NgModule({
@@ -17,6 +18,6 @@ import { SearchBarPage } from '../search-bar/search-bar.page';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, HeaderPage, CardPage, SearchBarPage]
+  declarations: [HomePage, HeaderPage, CardPage, SearchBarPage, TabsPage]
 })
 export class HomePageModule {}

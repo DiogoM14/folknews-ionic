@@ -34,6 +34,10 @@ const routes: Routes = [
     component: HomePage
   },
   {
+    path: 'covid-19',
+    component: HomePage
+  },
+  {
     path: 'new-details/:id',
     component: NewDetailsPage
   },

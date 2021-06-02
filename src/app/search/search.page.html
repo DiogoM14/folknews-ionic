@@ -1,7 +1,7 @@
 <ion-content class="new-bg">
   <div class="container">
     <form>
-      <ion-searchbar [(ngModel)]="news.title" name="title" onSubmit="news.title"></ion-searchbar>
+      <input type="text" [(ngModel)]="news.title" name="title" onSubmit="news.title" placeholder="Pesquise por tópicos, locais & fontes">
       <ion-button [routerLink]="['/search']" (click)="getNews(news.title)">Procurar</ion-button>
     </form>
 

@@ -1,3 +1,7 @@
+.new-bg {
+  --background: #202125;
+}
+
 .container {
   display: grid;
   height: 100%;
@@ -11,7 +15,6 @@
     "economia ultimas";
   gap: 20px;
   padding: 16px 16px 24px 16px;
-  background: #202125;
 }
 
 .card {

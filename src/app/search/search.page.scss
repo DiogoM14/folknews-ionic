@@ -7,10 +7,16 @@ form {
   flex-direction: column;
 
   input {
+    margin-top: 16px;
+    outline: none;
     height: 42px;
     padding: 0 16px;
     border: 0;
     border-bottom: 1px solid #c2c2c2;
     background: transparent;
+  }
+
+  ion-button {
+    margin: 16px 24px 0 24px;
   }
 }

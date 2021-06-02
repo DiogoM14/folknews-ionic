@@ -4,6 +4,10 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
+  h1, h2, h3, h4, h5, h6, ion-icon, p, span , button{
+    color: #fff;
+  }
+
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;

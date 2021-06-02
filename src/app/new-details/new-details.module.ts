@@ -9,6 +9,7 @@ import { NewDetailsPageRoutingModule } from './new-details-routing.module';
 import { NewDetailsPage } from './new-details.page';
 import { HeaderNewDetailsPage } from '../header-new-details/header-new-details.page';
 import { TabsPage } from '../tabs/tabs.page';
+import { CommentariesPage } from '../commentaries/commentaries.page';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { TabsPage } from '../tabs/tabs.page';
     IonicModule,
     NewDetailsPageRoutingModule
   ],
-  declarations: [NewDetailsPage, HeaderNewDetailsPage, TabsPage]
+  declarations: [NewDetailsPage, HeaderNewDetailsPage, TabsPage, CommentariesPage]
 })
 export class NewDetailsPageModule {}

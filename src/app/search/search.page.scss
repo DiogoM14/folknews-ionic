@@ -1,1 +1,16 @@
+.new-bg {
+  --background: #202125;
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    height: 42px;
+    padding: 0 16px;
+    border: 0;
+    border-bottom: 1px solid #c2c2c2;
+    background: transparent;
+  }
+}

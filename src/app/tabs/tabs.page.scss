@@ -1,4 +1,12 @@
 ion-tabs {
   position: relative;
   height: 56px;
+
+  ion-icon, ion-label {
+    color: #a7a7a7;
+  }
+}
+
+.hydrated {
+  background: #1f1f1f;
 }

@@ -1,5 +1,7 @@
 {
   "name": "folknews-ionic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

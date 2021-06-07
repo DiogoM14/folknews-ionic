@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { HomePage } from './home/home.page';
-import { NewDetailsPage } from './new-details/new-details.page';
-import { SearchPage } from './search/search.page';
+import { HomePage } from './screens/home/home.page';
+import { NewDetailsPage } from './screens/new-details/new-details.page';
+import { SearchPage } from './screens/search/search.page';
 
 const routes: Routes = [
   {
@@ -52,51 +52,47 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./screens/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'ultimas',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./screens/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'header',
-    loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
+    loadChildren: () => import('./components/header/header.module').then( m => m.HeaderPageModule)
   },
   {
     path: 'card',
-    loadChildren: () => import('./card/card.module').then( m => m.CardPageModule)
-  },
-  {
-    path: 'search-bar',
-    loadChildren: () => import('./search-bar/search-bar.module').then( m => m.SearchBarPageModule)
+    loadChildren: () => import('./components/card/card.module').then( m => m.CardPageModule)
   },
   {
     path: 'new-details',
-    loadChildren: () => import('./new-details/new-details.module').then( m => m.NewDetailsPageModule)
+    loadChildren: () => import('./screens/new-details/new-details.module').then( m => m.NewDetailsPageModule)
   },
   {
     path: 'header-new-details',
-    loadChildren: () => import('./header-new-details/header-new-details.module').then( m => m.HeaderNewDetailsPageModule)
+    loadChildren: () => import('./components/header-new-details/header-new-details.module').then( m => m.HeaderNewDetailsPageModule)
   },
   {
     path: 'tabs',
-    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
+    loadChildren: () => import('./components/tabs/tabs.module').then( m => m.TabsPageModule)
   },
   {
     path: 'categories',
-    loadChildren: () => import('./categories/categories.module').then( m => m.CategoriesPageModule)
+    loadChildren: () => import('./screens/categories/categories.module').then( m => m.CategoriesPageModule)
   },
   {
     path: 'header-categories',
-    loadChildren: () => import('./header-categories/header-categories.module').then( m => m.HeaderCategoriesPageModule)
+    loadChildren: () => import('./components/header-categories/header-categories.module').then( m => m.HeaderCategoriesPageModule)
   },
   {
     path: 'search',
-    loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
+    loadChildren: () => import('./screens/search/search.module').then( m => m.SearchPageModule)
   },
   {
     path: 'commentaries',
-    loadChildren: () => import('./commentaries/commentaries.module').then( m => m.CommentariesPageModule)
+    loadChildren: () => import('./components/commentaries/commentaries.module').then( m => m.CommentariesPageModule)
   },
 ];
 

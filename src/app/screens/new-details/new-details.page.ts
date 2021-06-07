@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CardService } from '../card/card.service';
+import { CardService } from '../../services/card.service';
 import { ActivatedRoute } from '@angular/router'
 
 @Component({
@@ -15,6 +15,10 @@ export class NewDetailsPage implements OnInit {
 
   ngOnInit(): void {
     this.initCurrentNew()
+  }
+
+  redirect(url) {
+    window.open(url, '_system');
   }
 
   getNews(id: string) {

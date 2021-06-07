@@ -7,9 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { NewDetailsPageRoutingModule } from './new-details-routing.module';
 
 import { NewDetailsPage } from './new-details.page';
-import { HeaderNewDetailsPage } from '../header-new-details/header-new-details.page';
-import { TabsPage } from '../tabs/tabs.page';
-import { CommentariesPage } from '../commentaries/commentaries.page';
+import { HeaderNewDetailsPage } from '../../components/header-new-details/header-new-details.page';
+import { TabsPage } from '../../components/tabs/tabs.page';
+import { CommentariesPage } from '../../components/commentaries/commentaries.page';
 
 @NgModule({
   imports: [

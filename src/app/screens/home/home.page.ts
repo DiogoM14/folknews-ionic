@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { HomeService } from './home.service';
+import { SearchService } from '../../services/search.service';
 
 @Component({
   selector: 'app-home',
@@ -9,17 +9,17 @@ import { HomeService } from './home.service';
 })
 export class HomePage {
   news: any = []
-  queryName = this.router.url
+  search = this.router.url
 
-  constructor(private cardService: HomeService, private router: Router) { }
+  constructor(private searchService: SearchService, private router: Router) { }
 
   ngOnInit(): void {
-    console.log(this.queryName)
-    this.getCategoryNews(this.queryName);
+    console.log(this.search)
+    this.getNews(this.search);
   }
 
-  getCategoryNews(queryName: string) {
-    this.cardService.getCardNews(queryName)
+  getNews(search: string) {
+    this.searchService.getNews(search)
     .subscribe(response => this.news = response
       )
     }

@@ -7,8 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { SearchPageRoutingModule } from './search-routing.module';
 
 import { SearchPage } from './search.page';
-import { TabsPage } from '../tabs/tabs.page';
-import { CardPage } from '../card/card.page';
+import { TabsPage } from '../../components/tabs/tabs.page';
+import { CardPage } from '../../components/card/card.page';
 
 @NgModule({
   imports: [

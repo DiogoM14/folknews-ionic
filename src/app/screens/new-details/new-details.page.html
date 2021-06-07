@@ -7,11 +7,14 @@
     <h1>{{ new.titulo }}</h1>
     <p class="description">{{ new.descricao }}</p>
 
+    <p class="url" (click)="redirect(new.shareUrl)">{{ new.shareUrl }}</p>
+
     <div class="authors">
       <p>por {{ new.autores[0].nome }}</p>
       <span>•</span>
       <p>{{ new.data | date: "M/d/yy, h:mm:a" }}</p>
     </div>
+
 
     <img src="{{ new.multimediaPrincipal }}" alt="{{ new.titulo }}">
 

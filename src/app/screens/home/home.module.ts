@@ -5,10 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { HeaderPage } from '../header/header.page';
-import { CardPage } from '../card/card.page';
-import { SearchBarPage } from '../search-bar/search-bar.page';
-import { TabsPage } from '../tabs/tabs.page';
+import { HeaderPage } from '../../components/header/header.page';
+import { CardPage } from '../../components/card/card.page';
+import { TabsPage } from '../../components/tabs/tabs.page';
 
 
 @NgModule({
@@ -18,6 +17,6 @@ import { TabsPage } from '../tabs/tabs.page';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, HeaderPage, CardPage, SearchBarPage, TabsPage]
+  declarations: [HomePage, HeaderPage, CardPage, TabsPage]
 })
 export class HomePageModule {}

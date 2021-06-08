@@ -7,8 +7,6 @@
     <h1>{{ new.titulo }}</h1>
     <p class="description">{{ new.descricao }}</p>
 
-    <p class="url" (click)="redirect(new.shareUrl)">{{ new.shareUrl }}</p>
-
     <div class="authors">
       <p>por {{ new.autores[0].nome }}</p>
       <span>•</span>
@@ -19,6 +17,8 @@
     <img src="{{ new.multimediaPrincipal }}" alt="{{ new.titulo }}">
 
     <p class="body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione harum minus nihil nisi quam nostrum. Et provident ea deserunt repellendus vitae sunt non, magni harum fugiat, nesciunt nisi cupiditate expedita?</p>
+
+    <p class="url" (click)="redirect(new.shareUrl)">{{ new.shareUrl }}</p>
 
     <hr/>
 

@@ -1,4 +1,4 @@
-<div class="commentaries">
+<div class="commentaries" *ngFor="let com of commentary">
   <div class="header">
     <img src="../../assets/avatar.png" alt="User">
     <div class="info">
@@ -7,7 +7,7 @@
     </div>
   </div>
 
-    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <p class="content">{{ com.com }}</p>
 
     <hr/>
 

@@ -2,7 +2,7 @@
   <div class="container">
     <form>
       <input type="text" [(ngModel)]="news.title" name="title" onSubmit="news.title" placeholder="Pesquise por tópicos, locais & fontes">
-      <ion-button [routerLink]="['/search']" (click)="getNews(news.title)">Procurar</ion-button>
+      <ion-button routerLink="/search/home" (click)="getNews(news.title)">Procurar</ion-button>
     </form>
     <app-card [news]="news"></app-card>
   </div>

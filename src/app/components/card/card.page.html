@@ -2,10 +2,16 @@
   <img src="{{ new.multimediaPrincipal }}" alt="{{ new.titulo }}">
   <div class="content">
     <h2>{{ new.titulo }}</h2>
+
+    <p class="resumo">{{ new.descricao }}</p>
+
     <div class="description">
-      <p class="author">{{ new.autores[0].nome }}</p>
-      <span>•</span>
-      <p class="date">{{new.data | date:'dd-MM-yyyy'}}</p>
+      <div>
+        <p class="author">{{ new.autores[0].nome }}</p>
+        <span>•</span>
+        <p class="date">{{new.data | date:'dd-MM-yyyy'}}</p>
+      </div>
+      <p class="categoria">{{ new.tags[0].nome }}</p>
     </div>
   </div>
 </div>

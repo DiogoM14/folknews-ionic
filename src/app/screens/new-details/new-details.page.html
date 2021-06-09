@@ -38,15 +38,15 @@
 
     <h6 class="separator">Comentários</h6>
 
-    <app-commentaries></app-commentaries>
-    <app-commentaries></app-commentaries>
-    <app-commentaries></app-commentaries>
+    <app-commentaries [commentary]="commentary"></app-commentaries>
 
     <h6 class="separator">Deixe o seu comentário</h6>
 
-    <div class="commentary_input">
-      <textarea name="commentary" id="" cols="30" rows="10" placeholder="Deixe o seu comentário aqui..."></textarea>
-      <button>
+    <!-- <p *ngFor="let com of commentary"> {{ com.com }}</p> -->
+
+    <div class="commentary_input" *ngFor="let com of comment">
+      <textarea name="commentary" [(ngModel)]="com.comment" id="" cols="30" rows="10" placeholder="Deixe o seu comentário aqui..."></textarea>
+      <button (click)="postComment(com.comment)">
         Enviar
         <ion-icon name="send-outline"></ion-icon>
       </button>

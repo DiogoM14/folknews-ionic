@@ -23,11 +23,26 @@
     font-size: 20px;
     margin: 8px 0 16px;
   }
+
+  .resumo {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #a7a7a7;
+  }
 }
 
 .description {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: row;
+  }
 
   p.author {
     font-size: 13px;
@@ -43,5 +58,11 @@
   p.date {
     font-size: 13px;
     color: #a7a7a7;
+  }
+
+  .categoria {
+    padding: 4px 8px;
+    background: #181e7a;
+    border-radius: 5px;
   }
 }

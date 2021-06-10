@@ -12,5 +12,4 @@ export class CommentariesPage implements OnInit {
 
   ngOnInit() {
   }
-
 }

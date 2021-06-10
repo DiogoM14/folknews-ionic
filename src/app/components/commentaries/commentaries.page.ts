@@ -11,7 +11,6 @@ export class CommentariesPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.commentary)
   }
 
 }

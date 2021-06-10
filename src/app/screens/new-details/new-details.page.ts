@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CardService } from '../../services/card.service';
 import { ActivatedRoute } from '@angular/router'
 
@@ -11,14 +11,10 @@ export class NewDetailsPage implements OnInit {
 
   news: any
   id: string = ''
-  comment: any = []
+  comments: String
   commentary: any = []
 
-  constructor(private service: CardService, private route: ActivatedRoute) {
-    this.comment = [
-      {id: 1}
-    ]
-  }
+  constructor(private service: CardService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.initCurrentNew()
@@ -45,8 +41,8 @@ export class NewDetailsPage implements OnInit {
     });
   }
 
-  postComment(com) {
-    const teste = [{com}]
-    this.commentary = teste
+  postComment() {
+    this.commentary.push(this.comments)
+    this.comments=""
   }
 }
